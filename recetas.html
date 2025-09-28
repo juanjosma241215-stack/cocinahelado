@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nosotros</title>
+ 
+    
+</head>
+<body>
+    
+<a href="index.html" class="btn-volver">Volver</a>
+<section>
+    <h1>Helados</h1>
+    <div class="helados-grid">
+        <article class="helado-card">
+            <img src="imagenes/h.vainilla.jpg" alt="Helado de vainilla">
+            <h2>Helado de Vainilla</h2>
+            <button class="ver-mas" onclick="mostrarInfo('info1')">Ver más</button>
+            <div class="info-extra" id="info1">
+                <strong>Precio:</strong> $20<br>
+                <span>Delicioso helado de vainilla, cremoso y refrescante.</span>
+            </div>
+        </article>
+
+        <article class="helado-card">
+            <img src="imagenes/h.chocolate.jpg" alt="Helado de chocolate">
+            <h2>Helado de Chocolate</h2>
+            <button class="ver-mas" onclick="mostrarInfo('info2')">Ver más</button>
+            <div class="info-extra" id="info2">
+                <strong>Precio:</strong> $25<br>
+                <span>Helado intenso de chocolate, perfecto para los amantes del cacao.</span>
+            </div>
+        </article>
+
+        <article class="helado-card">
+            <img src="imagenes/helado-de-fresa.jpg" alt="Helado de fresa">
+            <h2>Helado de Fresa</h2>
+            <button class="ver-mas" onclick="mostrarInfo('info3')">Ver más</button>
+            <div class="info-extra" id="info3">
+                <strong>Precio:</strong> $22<br>
+                <span>Helado natural de fresa, dulce y refrescante.</span>
+            </div>
+        </article>
+
+        <article class="helado-card">
+            <img src="imagenes/h.mango.jpg" alt="Helado de mango">
+            <h2>Helado de Mango</h2>
+            <button class="ver-mas" onclick="mostrarInfo('info4')">Ver más</button>
+            <div class="info-extra" id="info4">
+                <strong>Precio:</strong> $23<br>
+                <span>Helado exótico de mango, con un sabor tropical irresistible.</span>
+            </div>
+        </article>
+
+        <article class="helado-card">
+            <img src="imagenes/h.coco.jpg" alt="Helado de coco">
+            <h2>Helado de Coco</h2>
+            <button class="ver-mas" onclick="mostrarInfo('info5')">Ver más</button>
+            <div class="info-extra" id="info5">
+                <strong>Precio:</strong> $24<br>
+                <span>Helado cremoso de coco, ideal para los días calurosos.</span>
+            </div>
+        </article>
+
+        <article class="helado-card">
+            <img src="imagenes/h.menta.jpg" alt="Helado de menta">
+            <h2>Helado de Menta</h2>
+            <button class="ver-mas" onclick="mostrarInfo('info6')">Ver más</button>
+            <div class="info-extra" id="info6">
+                <strong>Precio:</strong> $21<br>
+                <span>Helado refrescante de menta con chispas de chocolate.</span>
+            </div>
+        </article>
+
+        <article class="helado-card">
+            <img src="imagenes/h.cafe.jpg" alt="Helado de cafe">
+            <h2>Helado de Café</h2>
+            <button class="ver-mas" onclick="mostrarInfo('info7')">Ver más</button>
+            <div class="info-extra" id="info7">
+                <strong>Precio:</strong> $26<br>
+                <span>Helado intenso de café, para los amantes del buen café.</span>
+            </div>
+        </article>
+
+        <article class="helado-card">
+            <img src="imagenes/h.chicle.jpg" alt="Helado de chicle">
+            <h2>Helado de Chicle</h2>
+            <button class="ver-mas" onclick="mostrarInfo('info8')">Ver más</button>
+            <div class="info-extra" id="info8">
+                <strong>Precio:</strong> $19<br>
+                <span>Helado divertido de chicle, ideal para los niños.</span>
+            </div>
+        </article>
+    </div>
+</section>
+    <script>
+    function mostrarInfo(id) {
+        var info = document.getElementById(id);
+        if (info.style.display === "block") {
+            info.style.display = "none";
+        } else {
+            info.style.display = "block";
+        }
+    }
+    </script>
+</body>
+
+</html>
